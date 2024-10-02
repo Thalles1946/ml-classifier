@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ml_classifier.MainPage">
+
+    <Grid>
+
+        <ScrollView>
+            <Grid>
+                <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+                    <HorizontalStackLayout HorizontalOptions="Center">
+                        <Button
+                            Margin="5"
+                            x:Name="CounterBtn1"
+                            Grid.Column="1"
+                            HeightRequest="10"
+                            Text="Inovação" 
+                            SemanticProperties.Hint="Counts the number of times you click"
+                            Clicked="OnCounterClicked"
+                            HorizontalOptions="Fill" />
+                        <Button
+                            Margin="5"
+                            x:Name="CounterBtn2"
+                            Text="TI (Tecnologia da Informação)" 
+                            Grid.Column="1"
+                            HeightRequest="10"
+                            SemanticProperties.Hint="Counts the number of times you click"
+                            Clicked="OnCounterClicked"
+                            HorizontalOptions="Fill" />
+                        <Button
+                            Margin="5"
+                            x:Name="CounterBtn3"
+                            Text="TA (Tecnologia da Automação)"
+                            Grid.Column="1"
+                            HeightRequest="10"
+                            SemanticProperties.Hint="Counts the number of times you click"
+                            Clicked="OnCounterClicked"
+                            HorizontalOptions="Fill" />
+                        <Button
+                            Margin="5"
+                            x:Name="CounterBtn4"
+                            Text="Engenharia/Projetos"
+                            Grid.Column="1"
+                            HeightRequest="10"
+                            SemanticProperties.Hint="Counts the number of times you click"
+                            Clicked="OnCounterClicked"
+                            HorizontalOptions="Fill" />
+                        <Button
+                            Margin="5"
+                            x:Name="CounterBtn5"
+                            Text="Melhoria Contínua" 
+                            Grid.Column="1"
+                            HeightRequest="10"
+                            SemanticProperties.Hint="Counts the number of times you click"
+                            Clicked="OnCounterClicked"
+                            HorizontalOptions="Fill" />
+                        <Button
+    Margin="5"
+    x:Name="CounterBtn6"
+    Text="5S" 
+    Grid.Column="1"
+    HeightRequest="10"
+    SemanticProperties.Hint="Counts the number of times you click"
+    Clicked="OnCounterClicked"
+    HorizontalOptions="Fill" />
+                        <Button
+    Margin="5"
+    x:Name="CounterBtn7"
+    Text="TODAS"
+    Grid.Column="1"
+    HeightRequest="10"
+    SemanticProperties.Hint="Counts the number of times you click"
+    Clicked="OnCounterClicked"
+    HorizontalOptions="Fill" />
+                        <Button
+    Margin="5"
+    x:Name="CounterBtn8"
+    Text="EXPORTAR"
+    Grid.Column="1"
+    HeightRequest="10"
+    SemanticProperties.Hint="Counts the number of times you click"
+    Clicked="OnCounterClicked"
+    HorizontalOptions="Fill" />
+                        <Button
+    Margin="5"
+    x:Name="CounterBtn9"
+    Text="IMPORTAR" 
+    Grid.Column="1"
+    HeightRequest="10"
+    SemanticProperties.Hint="Counts the number of times you click"
+    Clicked="SearchFile"
+    HorizontalOptions="Fill" />
+                    </HorizontalStackLayout>
+                <Entry
+                x:Name="search"
+                Placeholder="Digite o termo de busca"
+                TextChanged="onChange_search"
+                />
+                <Button
+                x:Name="CounterBtn"
+                Text="Click me" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill" />
+            </VerticalStackLayout>
+            </Grid>
+
+        </ScrollView>
+    </Grid>
+
+</ContentPage>
